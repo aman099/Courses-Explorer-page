@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!--  -->
+    <!-- Font-Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  -->
+    <!-- Pari CSS -->
+    <link rel="stylesheet" href="./beauty/pari.css" />
+    <link rel="stylesheet" href="./beauty/components/navbar-pari.css" />
+    <link rel="stylesheet" href="./beauty/layout/container.css" />
+    <link rel="stylesheet" href="./beauty/helpers/flexbox.css" />
+    <link rel="stylesheet" href="./beauty/elements/button-pari.css" />
+    <!--  -->
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+    <title>Courses</title>
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="overlay2"></div>
+    <!-- Navigation -->
+    <nav id="nav" class="">
+        <header>
+            <div class="logo-img-container">
+                <div class="hamburger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span class="hidden-span-hammy"></span>
+                </div>
+                <span class="img-span">
+                    <img src="./assets/Luma-logo.svg" alt="Luma logo" />
+                </span>
+                <h2>Luma</h2>
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Paths</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Teachers</a></li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-users"></i></a>
+                </li>
+            </ul>
+        </header>
+        <input type="checkbox" id="nav-check" />
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+        <ul class="right-ul">
+            <li>
+                <div class="input-container">
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" placeholder="Search.." />
+                </div>
+            </li>
+            <li class="lock">
+                <a href="#"><i class="fa-solid fa-lock"></i></a>
+            </li>
+            <li><button class="outlined-btn">Get Started</button></li>
+        </ul>
+    </nav>
+    <!--  -->
+
+    <!-- Sidebar -->
+    <div id="luma-container">
+        <aside id="aside" class="aside1">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a class="title" href="#">Student</a></li>
+                    <li>
+                        <span><i class="fa-solid fa-house"></i></span><a href="#">Home</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-book-open-reader"></i></span><a href="#">Browse Courses</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-mobile"></i></span><a href="#">Browse Paths</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-user"></i></span><a href="#">Student Dashboard</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span><a href="#">My Courses</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-chart-line"></i></span><a href="#">My Paths</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-bezier-curve"></i></span><a href="#">Path Details</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-face-smile"></i></span><a href="#">Course Preview</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-circle"></i></span><a href="#">Lesson Preview</a>
+                    </li>
+                    <li class="abs-menu">
+                        <span><i class="fa-regular fa-bookmark"></i></span><a href="#">Take Course</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-book-open"></i></span><a href="#">Take Lesson</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-tv"></i></span><a href="#">Take Quiz</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-chart-simple"></i></span><a href="#">My Quizzes</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-brands fa-rocketchat"></i></span><a href="#">Quiz Result</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-layer-group"></i></span><a href="#">Skill Assessment</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-square-check"></i></span><a href="#">Skill Result</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a class="title" href="#">Instructor</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-graduation-cap"></i></span><a href="#">Instructor Dashboard</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-book-open"></i></span><a href="#">Manage Courses</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-question"></i></span><a href="#">Manage Quizzes</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-arrow-up-right-dots"></i></span><a href="#">Earnings</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-regular fa-note-sticky"></i></span><a href="#">Statement</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-book-bookmark"></i></span><a href="#">Edit Course</a>
+                    </li>
+                    <li>
+                        <span><i class="fa-solid fa-bezier-curve"></i></span><a href="#">Edit Quiz</a>
+                    </li>
+                </ul>
+                <ul class="dropdown-ul">
+                    <li class="title"><a href="#" class="title">Applications</a></li>
+                    <div class="revealer">
+                        <li class="drop-instigater">
+                            <div class="menus-cont">
+                                <span><i class="fa-solid fa-gauge"></i></span>
+                                <a href="#">Enterprise</a>
+                            </div>
+                            <span class="chevron-ri8"><i class="fa-solid fa-chevron-right"></i></span>
+                        </li>
+                        <ul class="reveal reveal-1">
+                            <li>ERP Dashboard</li>
+                            <li>CRM Dashboard</li>
+                            <li>HR Dashboard</li>
+                            <li>Employees</li>
+                            <li>Self</li>
+                            <li>Leaves</li>
+                            <li class="last-reveal-opt">Departments</li>
+                        </ul>
+                    </div>
+                    <div class="revealer">
+                        <li class="drop-instigater">
+                            <div class="menus-cont">
+                                <span><i class="fa-solid fa-gauge"></i></span>
+                                <a href="#">Productivity</a>
+                            </div>
+                            <span class="chevron-ri8"><i class="fa-solid fa-chevron-right"></i></span>
+                        </li>
+                        <ul class="reveal reveal-2">
+                            <li>Projects</li>
+                            <li>Tasks Board</li>
+                            <li>Tasks List</li>
+                            <li class="last-reveal-opt">Kanban</li>
+                        </ul>
+                    </div>
+                    <div class="revealer">
+                        <li class="drop-instigater">
+                            <div class="menus-cont">
+                                <span><i class="fa-solid fa-gauge"></i></span>
+                                <a href="#">Enterprise</a>
+                            </div>
+                            <span class="chevron-ri8"><i class="fa-solid fa-chevron-right"></i></span>
+                        </li>
+                        <ul class="reveal reveal-3">
+                            <li>Shop Dashboard</li>
+                            <li class="last-reveal-opt">Edit Product</li>
+                        </ul>
+                    </div>
+                    <div class="revealer">
+                        <li class="drop-instigater">
+                            <div class="menus-cont">
+                                <span><i class="fa-solid fa-gauge"></i></span>
+                                <a href="#">Messaging</a>
+                            </div>
+                            <span class="chevron-ri8"><i class="fa-solid fa-chevron-right"></i></span>
+                        </li>
+                        <ul class="reveal reveal-4">
+                            <li>Messages</li>
+                            <li>Email</li>
+                        </ul>
+                    </div>
+                    <div class="revealer">
+                        <li class="drop-instigater">
+                            <div class="menus-cont">
+                                <span><i class="fa-solid fa-gauge"></i></span>
+                                <a href="#">CMS</a>
+                            </div>
+                            <span class="chevron-ri8"><i class="fa-solid fa-chevron-right"></i></span>
+                        </li>
+                        <ul class="reveal reveal-5">
+                            <li>CMS Dashboard</li>
+                            <li>Posts</li>
+                        </ul>
+                    </div>
+                    <div class="revealer">
+                        <li class="drop-instigater">
+                            <div class="menus-cont">
+                                <span><i class="fa-solid fa-gauge"></i></span>
+                                <a href="#">Account</a>
+                            </div>
+                            <span class="chevron-ri8"><i class="fa-solid fa-chevron-right"></i></span>
+                        </li>
+                        <ul class="reveal reveal-6">
+                            <li>Pricing</li>
+                            <li>Login</li>
+                            <li>Signup</li>
+                            <li>Payment</li>
+                            <li>Reset Password</li>
+                            <li>Change Password</li>
+                            <li>Edit Account</li>
+                            <li>Profile & Privacy</li>
+                            <li>Email Notifications</li>
+                            <li>Account Password</li>
+                            <li>Subscription</li>
+                            <li>Upgrade Account</li>
+                            <li>Payment Information</li>
+                            <li>Payment Hostory</li>
+                            <li>Invoice</li>
+                            <li class="last-reveal-opt">Edit Account</li>
+                        </ul>
+                    </div>
+                    <div class="revealer">
+                        <li class="drop-instigater">
+                            <div class="menus-cont">
+                                <span><i class="fa-solid fa-gauge"></i></span>
+                                <a href="#">Community</a>
+                            </div>
+                            <span class="chevron-ri8"><i class="fa-solid fa-chevron-right"></i></span>
+                        </li>
+                        <ul class="reveal reveal-7">
+                            <li>Browse Teachers</li>
+                            <li>Student Profile</li>
+                            <li>Teacher Profile</li>
+                            <li>Blog</li>
+                            <li>Blog Post</li>
+                            <li>FAQ</li>
+                            <li>Help Center</li>
+                            <li>Discussions</li>
+                            <li>Discussion Details</li>
+                            <li>Ask Question</li>
+                        </ul>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <main id="main" class="container is-fullhd">
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="title-container">
+                        <div class="left">
+                            <p>Displaying 4 out of 10 courses</p>
+                        </div>
+                        <div class="right">
+                            <div class="title-cont-para">
+                                <p>Sort by</p>
+                                <p>
+                                    Newest <span><i class="fa-solid fa-sort"></i></span>
+                                </p>
+                                <p>
+                                    Popularity <span><i class="fa-solid fa-sort"></i></span>
+                                </p>
+                            </div>
+                            <button class="filter-btn">
+                                <span><i class="fa-solid fa-filter"></i></span>Filters
+                            </button>
+                        </div>
+                    </div>
+                    <div class="courses popular-courses">
+                        <div class="courses-title">
+                            <h5>popular courses</h5>
+                        </div>
+                        <div class="tdc-cards-container flex-center">
+                            <div class="tdc-card tdc-card-1">
+                                <div class="tdc-img-cont">
+                                    <img src="./assets/card-1.png" alt="" />
+                                    <div class="preview-abs">
+                                        <span><i class="fa-regular fa-circle-play"></i></span>
+                                        <p>Preview</p>
+                                    </div>
+                                </div>
+                                <div class="tdc-img-info">
+                                    <p>
+                                        Newsletter Design
+                                        <span>
+                                            <span class="tdc-teacher">Elijah Murray</span>
+                                            <span class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                </div>
+                            </div>
+                            <div class="tdc-card tdc-card-2">
+                                <div class="tdc-img-cont">
+                                    <img src="./assets/card-2.png" alt="" />
+                                    <div class="preview-abs">
+                                        <span><i class="fa-regular fa-circle-play"></i></span>
+                                        <p>Preview</p>
+                                    </div>
+                                </div>
+                                <div class="tdc-img-info">
+                                    <p>
+                                        Adobe XD
+                                        <span>
+                                            <span class="tdc-teacher">Elijah Murray</span>
+                                            <span class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <span><i class="fa-solid fa-heart"></i></span>
+                                </div>
+                            </div>
+                            <div class="tdc-card tdc-card-3">
+                                <div class="tdc-img-cont">
+                                    <img src="./assets/card-3.png" alt="" />
+                                    <div class="preview-abs">
+                                        <span><i class="fa-regular fa-circle-play"></i></span>
+                                        <p>Preview</p>
+                                    </div>
+                                </div>
+                                <div class="tdc-img-info">
+                                    <p>
+                                        inVision App
+                                        <span>
+                                            <span class="tdc-teacher">Elijah Murray</span>
+                                            <span class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                </div>
+                            </div>
+                            <div class="tdc-card tdc-card-4">
+                                <div class="tdc-img-cont">
+                                    <img src="./assets/card-4.png" alt="" />
+                                    <div class="preview-abs">
+                                        <span><i class="fa-regular fa-circle-play"></i></span>
+                                        <p>Preview</p>
+                                    </div>
+                                </div>
+                                <div class="tdc-img-info">
+                                    <p>
+                                        Craft by inVision
+                                        <span>
+                                            <span class="tdc-teacher">Elijah Murray</span>
+                                            <span class="stars">
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                                <i class="fa-regular fa-star"></i>
+                                            </span>
+                                        </span>
+                                    </p>
+                                    <span><i class="fa-regular fa-heart"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <p>
+                                <span class="left-chev"><i class="fa-solid fa-angle-left"></i> prev</span><span
+                                    class="hr">|</span> 1
+                                <span class="hr">|</span> 2
+                                <span class="hr">|</span>
+                                <span class="right-chev">next <i class="fa-solid fa-angle-right"></i></i></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="courses development-courses">
+                        <div class="courses-title">
+                            <h5>development courses</h5>
+                        </div>
+                        <div class="course-cards">
+                            <div class="course course-1">
+                                <div class="img-container">
+                                    <img src="./assets/angular.png" alt="Monkey chimp" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Learn Angular <br> fundamentals</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course course-2">
+                                <div class="img-container">
+                                    <img src="./assets/wordpress.png" alt="Monkey chimp" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Build an iOS <br> application in Swift</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course course-3">
+                                <div class="img-container">
+                                    <img src="./assets/swift.png" alt="Monkey chimp" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Build a Wordpress <br> Website</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course course-4">
+                                <div class="img-container">
+                                    <img src="./assets/react.png" alt="React logo" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Become a React <br> Native Developer</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <p>
+                                <span class="left-chev"><i class="fa-solid fa-angle-left"></i> prev</span><span
+                                    class="hr">|</span> 1
+                                <span class="hr">|</span> 2
+                                <span class="hr">|</span>
+                                <span class="right-chev">next <i class="fa-solid fa-angle-right"></i></i></span>
+                            </p>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="courses design-courses">
+                        <div class="courses-title">
+                            <h5>design courses</h5>
+                        </div>
+                        <div class="course-cards">
+                            <div class="course course-1">
+                                <div class="img-container">
+                                    <img src="./assets/sketch.png" alt="Sketch logo" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Learn Sketch</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course course-2">
+                                <div class="img-container">
+                                    <img src="./assets/flint.png" alt="Flint logo" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Learn Sketch</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course course-3">
+                                <div class="img-container">
+                                    <img src="./assets/ps.png" alt="Photoshop logo" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Learn Photoshop</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="course course-4">
+                                <div class="img-container">
+                                    <img src="./assets/figma.png" alt="Figma logo" />
+                                </div>
+                                <div class="card-info">
+                                    <div class="info-header">
+                                        <h5>Learn Figma</h5>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
+                                    <div class="info-hidden">
+                                        <p>Elijah Murray</p>
+                                        <div class="info-desc">
+                                            <div class="stars">
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-solid fa-star"></i></span>
+                                                <span><i class="fa-regular fa-star"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="info-content">
+                                        <div class="time"><span><i class="fa-regular fa-clock"></i></span>&nbsp; 6 hours
+                                        </div>
+                                        <div class="lessons"><span><i class="fa-regular fa-circle-play"></i></span>
+                                            &nbsp; 12 lessons</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <p>
+                                <span class="left-chev"><i class="fa-solid fa-angle-left"></i> prev</span><span
+                                    class="hr">|</span> 1
+                                <span class="hr">|</span> 2
+                                <span class="hr">|</span>
+                                <span class="right-chev">next <i class="fa-solid fa-angle-right"></i></i></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer id="footer">
+                <div class="footer-container container is-fullhd">
+                    <div class="footer-left">
+                        <div class="footer-logo">
+                            <img src="./assets/luma-footer-logo.png" alt="Luma logo">
+                            <h2>Luma</h2>
+                        </div>
+                        <div class="footer-para">
+                            <p>Luma is a beautifully crafted user interface for modern Education Platforms, including
+                                Courses &
+                                Tutorials, Video Lessons, Student and Teacher Dashboard, Curriculum Management, Earnings
+                                and
+                                Reporting, ERP, HR, CMS, Tasks, Projects, eCommerce and more.</p>
+                        </div>
+                        <div class="copyright">
+                            <a href="#">Terms</a>
+                            <a href="#">Privacy Policy</a>
+                            <p>Copyright 2019 &copy; All rights reserved</p>
+                        </div>
+                    </div>
+                    <div class="footer-right"></div>
+                </div>
+            </footer>
+        </main>
+    </div>
+    <aside id="aside" class="aside-2">
+        <nav class="sidebar-nav sidebar-nav-2">
+            <ul>
+                <li><a class="title" href="#">Student</a></li>
+                <li>
+                    <span><i class="fa-solid fa-house"></i></span><a href="#">Web Development</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-book-open-reader"></i></span><a href="#">Design</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-mobile"></i></span><a href="#">iOS & Swift</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-user"></i></span><a href="#">Android</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-magnifying-glass"></i></span><a href="#">Business</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-chart-line"></i></span><a href="#">Photography</a>
+                </li>
+                <li>
+                    <span><i class="fa-solid fa-bezier-curve"></i></span><a href="#">Marketing</a>
+                </li>
+                <li>
+                    <span><i class="fa-regular fa-face-smile"></i></span><a href="#">eCommerce</a>
+                </li>
+                <li>
+                    <span><i class="fa-regular fa-circle"></i></span><a href="#">Health & Fitness</a>
+                </li>
+                <li class="abs-menu">
+                    <span><i class="fa-regular fa-bookmark"></i></span><a href="#">Music</a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a class="title" href="#">Platform</a>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="all">
+                    <label for="all">All</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="archive">
+                    <label for="archive">Archive</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="unity">
+                    <label for="unity">Unity</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="web">
+                    <label for="web">Web</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="iOS">
+                    <label for="iOS">iOS & Swift</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="android">
+                    <label for="android">Android</label>
+                </li>
+            </ul>
+            <ul class="subscription-ul">
+                <li class="title"><a href="#" class="title">Subscription</a></li>
+                <li>
+                    <input type="checkbox" name="" id="all-2">
+                    <label for="all-2">All</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="free">
+                    <label for="free">Free</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="beginner">
+                    <label for="beginner">Beginner</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="advanced">
+                    <label for="advanced">Advanced</label>
+                </li>
+            </ul>
+            <ul class="dropdown-ul">
+                <li class="title"><a href="#" class="title">Content Type</a></li>
+                <li>
+                    <input type="checkbox" name="" id="all-3">
+                    <label for="all-3">All</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="episode">
+                    <label for="episode">Episode</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="video">
+                    <label for="video">Video</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="article">
+                    <label for="article">Article</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="book">
+                    <label for="book">Book</label>
+                </li>
+                <li>
+                    <input type="checkbox" name="" id="screencast">
+                    <label for="screencast">Screencast</label>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <!--  -->
+    <div class="overlay"></div>
+</body>
+
+</html>
