@@ -52,9 +52,12 @@
                 <li><a href="#">Paths</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Teachers</a></li>
-                <li>
-                    <a href="#"><i class="fa-solid fa-users"></i></a>
-                </li>
+                <div class="tooltip tooltip-bottom">
+                    <li>
+                        <a href="#"><i class="fa-solid fa-users"></i></a>
+                    </li>
+                    <span class="tooltip-text">Community</span>
+                </div>
             </ul>
         </header>
         <input type="checkbox" id="nav-check" />
@@ -72,9 +75,12 @@
                     <input type="text" placeholder="Search.." />
                 </div>
             </li>
-            <li class="lock">
-                <a href="#"><i class="fa-solid fa-lock"></i></a>
-            </li>
+            <div class="tooltip tooltip-bottom">
+                <li class="lock">
+                    <a href="#"><i class="fa-solid fa-lock"></i></a>
+                </li>
+                <span class="tooltip-text">Login</span>
+            </div>
             <li><button class="outlined-btn">Get Started</button></li>
         </ul>
     </nav>
@@ -210,7 +216,7 @@
                         </ul>
                     </div>
                     <div class="revealer">
-                        <li class="drop-instigater">
+                        <li class="drop-instigater abs-menu abs-menu-2">
                             <div class="menus-cont">
                                 <span><i class="fa-solid fa-gauge"></i></span>
                                 <a href="#">Messaging</a>
@@ -313,104 +319,293 @@
                             <h5>popular courses</h5>
                         </div>
                         <div class="tdc-cards-container flex-center">
-                            <div class="tdc-card tdc-card-1">
-                                <div class="tdc-img-cont">
-                                    <img src="./assets/card-1.png" alt="" />
-                                    <div class="preview-abs">
-                                        <span><i class="fa-regular fa-circle-play"></i></span>
-                                        <p>Preview</p>
+                            <div class="tdc-card-wrapper tdc-card-1-wrapper">
+                                <div class="tooltip-arr"></div>
+                                <div class="tooltip tooltip-bottom"> <span class="tooltip-text">Remove Favourite</span>
+                                    </span>
+                                </div>
+                                <div class="tooltip-down-arr"></div>
+                                <div class="tdc-card-tt-cont tdc-card-1-tt-cont">
+                                    <div class="tooltip-title">
+                                        <span><img src="./assets/card-1.png" alt=""></span>
+                                        <div class="title-infos">
+                                            <h5>Newsletter Design</h5>
+                                            <p>with Elijah Murray</p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip-brief">
+                                        <p>Learn the fundamentals of working with Angular and how to create basic
+                                            applications.</p>
+                                    </div>
+                                    <ul class="tooltip-bullets">
+                                        <li><span><i class="fa-solid fa-check"></i></span> Fundamentals of working with
+                                            Angular</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Create complete Angular
+                                            applications</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Working with the Angular CLI
+                                        </li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Understanding Dependancy
+                                            Injection</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Testing with Angular</li>
+                                    </ul>
+                                    <div class="tooltip-endings">
+                                        <div class="endings-left">
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-clock"></i></span> 6 hours
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-circle-play"></i></span> 12 lessons
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-solid fa-chart-column"></i></span> Beginner
+                                            </div>
+                                        </div>
+                                        <div class="endings-right">
+                                            <button class="primary-btn">WATCH TRAILER</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tdc-img-info">
-                                    <p>
-                                        Newsletter Design
-                                        <span>
-                                            <span class="tdc-teacher">Elijah Murray</span>
-                                            <span class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
+                                <div class="tdc-card tdc-card-1">
+                                    <div class="tdc-img-cont">
+                                        <img src="./assets/card-1.png" alt="" />
+                                        <div class="preview-abs">
+                                            <span><i class="fa-regular fa-circle-play"></i></span>
+                                            <p>Preview</p>
+                                        </div>
+                                    </div>
+                                    <div class="tdc-img-info">
+                                        <p>
+                                            Newsletter Design
+                                            <span>
+                                                <span class="tdc-teacher">Elijah Murray</span>
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </p>
-                                    <span><i class="fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <span class="heart-span solid-heart-span">
+                                            <i class="fa-solid fa-heart"></i>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tdc-card tdc-card-2">
-                                <div class="tdc-img-cont">
-                                    <img src="./assets/card-2.png" alt="" />
-                                    <div class="preview-abs">
-                                        <span><i class="fa-regular fa-circle-play"></i></span>
-                                        <p>Preview</p>
+                            <div class="tdc-card-wrapper tdc-card-2-wrapper">
+                                <div class="tooltip-arr"></div>
+                                <div class="tooltip tooltip-bottom"> <span class="tooltip-text">Add Favourite</span>
+                                    </span>
+                                </div>
+                                <div class="tooltip-down-arr"></div>
+                                <div class="tdc-card-tt-cont tdc-card-2-tt-cont">
+                                    <div class="tooltip-title">
+                                        <span><img src="./assets/card-2.png" alt=""></span>
+                                        <div class="title-infos">
+                                            <h5>Adobe XD</h5>
+                                            <p>with Elijah Murray</p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip-brief">
+                                        <p>Learn the fundamentals of working with Angular and how to create basic
+                                            applications.</p>
+                                    </div>
+                                    <ul class="tooltip-bullets">
+                                        <li><span><i class="fa-solid fa-check"></i></span> Fundamentals of working with
+                                            Angular</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Create complete Angular
+                                            applications</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Working with the Angular CLI
+                                        </li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Understanding Dependancy
+                                            Injection</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Testing with Angular</li>
+                                    </ul>
+                                    <div class="tooltip-endings">
+                                        <div class="endings-left">
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-clock"></i></span> 6 hours
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-circle-play"></i></span> 12 lessons
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-solid fa-chart-column"></i></span> Beginner
+                                            </div>
+                                        </div>
+                                        <div class="endings-right">
+                                            <button class="primary-btn">WATCH TRAILER</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tdc-img-info">
-                                    <p>
-                                        Adobe XD
-                                        <span>
-                                            <span class="tdc-teacher">Elijah Murray</span>
-                                            <span class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
+                                <div class="tdc-card tdc-card-2">
+                                    <div class="tdc-img-cont">
+                                        <img src="./assets/card-2.png" alt="" />
+                                        <div class="preview-abs">
+                                            <span><i class="fa-regular fa-circle-play"></i></span>
+                                            <p>Preview</p>
+                                        </div>
+                                    </div>
+                                    <div class="tdc-img-info">
+                                        <p>
+                                            Adobe XD
+                                            <span>
+                                                <span class="tdc-teacher">Elijah Murray</span>
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </p>
-                                    <span><i class="fa-solid fa-heart"></i></span>
+                                        </p>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tdc-card tdc-card-3">
-                                <div class="tdc-img-cont">
-                                    <img src="./assets/card-3.png" alt="" />
-                                    <div class="preview-abs">
-                                        <span><i class="fa-regular fa-circle-play"></i></span>
-                                        <p>Preview</p>
+                            <div class="tdc-card-wrapper tdc-card-3-wrapper">
+                                <div class="tooltip-arr"></div>
+                                <div class="tooltip tooltip-bottom"> <span class="tooltip-text">Add Favourite</span>
+                                    </span>
+                                </div>
+                                <div class="tooltip-down-arr"></div>
+                                <div class="tdc-card-tt-cont tdc-card-3-tt-cont">
+                                    <div class="tooltip-title">
+                                        <span><img src="./assets/card-3.png" alt=""></span>
+                                        <div class="title-infos">
+                                            <h5>inVision App</h5>
+                                            <p>with Elijah Murray</p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip-brief">
+                                        <p>Learn the fundamentals of working with Angular and how to create basic
+                                            applications.</p>
+                                    </div>
+                                    <ul class="tooltip-bullets">
+                                        <li><span><i class="fa-solid fa-check"></i></span> Fundamentals of working with
+                                            Angular</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Create complete Angular
+                                            applications</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Working with the Angular CLI
+                                        </li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Understanding Dependancy
+                                            Injection</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Testing with Angular</li>
+                                    </ul>
+                                    <div class="tooltip-endings">
+                                        <div class="endings-left">
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-clock"></i></span> 6 hours
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-circle-play"></i></span> 12 lessons
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-solid fa-chart-column"></i></span> Beginner
+                                            </div>
+                                        </div>
+                                        <div class="endings-right">
+                                            <button class="primary-btn">WATCH TRAILER</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tdc-img-info">
-                                    <p>
-                                        inVision App
-                                        <span>
-                                            <span class="tdc-teacher">Elijah Murray</span>
-                                            <span class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
+                                <div class="tdc-card tdc-card-3">
+                                    <div class="tdc-img-cont">
+                                        <img src="./assets/card-3.png" alt="" />
+                                        <div class="preview-abs">
+                                            <span><i class="fa-regular fa-circle-play"></i></span>
+                                            <p>Preview</p>
+                                        </div>
+                                    </div>
+                                    <div class="tdc-img-info">
+                                        <p>
+                                            inVision App
+                                            <span>
+                                                <span class="tdc-teacher">Elijah Murray</span>
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </p>
-                                    <span><i class="fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="tdc-card tdc-card-4">
-                                <div class="tdc-img-cont">
-                                    <img src="./assets/card-4.png" alt="" />
-                                    <div class="preview-abs">
-                                        <span><i class="fa-regular fa-circle-play"></i></span>
-                                        <p>Preview</p>
+                            <div class="tdc-card-wrapper tdc-card-4-wrapper">
+                                <div class="tooltip-arr"></div>
+                                <div class="tooltip tooltip-bottom"> <span class="tooltip-text">Add Favourite</span>
+                                    </span>
+                                </div>
+                                <div class="tooltip-down-arr"></div>
+                                <div class="tdc-card-tt-cont tdc-card-4-tt-cont">
+                                    <div class="tooltip-title">
+                                        <span><img src="./assets/card-4.png" alt=""></span>
+                                        <div class="title-infos">
+                                            <h5>Craft by inVision</h5>
+                                            <p>with Elijah Murray</p>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip-brief">
+                                        <p>Learn the fundamentals of working with Angular and how to create basic
+                                            applications.</p>
+                                    </div>
+                                    <ul class="tooltip-bullets">
+                                        <li><span><i class="fa-solid fa-check"></i></span> Fundamentals of working with
+                                            Angular</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Create complete Angular
+                                            applications</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Working with the Angular CLI
+                                        </li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Understanding Dependancy
+                                            Injection</li>
+                                        <li><span><i class="fa-solid fa-check"></i></span> Testing with Angular</li>
+                                    </ul>
+                                    <div class="tooltip-endings">
+                                        <div class="endings-left">
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-clock"></i></span> 6 hours
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-regular fa-circle-play"></i></span> 12 lessons
+                                            </div>
+                                            <div class="endings-left-1">
+                                                <span><i class="fa-solid fa-chart-column"></i></span> Beginner
+                                            </div>
+                                        </div>
+                                        <div class="endings-right">
+                                            <button class="primary-btn">WATCH TRAILER</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="tdc-img-info">
-                                    <p>
-                                        Craft by inVision
-                                        <span>
-                                            <span class="tdc-teacher">Elijah Murray</span>
-                                            <span class="stars">
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-solid fa-star"></i>
-                                                <i class="fa-regular fa-star"></i>
+                                <div class="tdc-card tdc-card-4">
+                                    <div class="tdc-img-cont">
+                                        <img src="./assets/card-4.png" alt="" />
+                                        <div class="preview-abs">
+                                            <span><i class="fa-regular fa-circle-play"></i></span>
+                                            <p>Preview</p>
+                                        </div>
+                                    </div>
+                                    <div class="tdc-img-info">
+                                        <p>
+                                            Craft by inVision
+                                            <span>
+                                                <span class="tdc-teacher">Elijah Murray</span>
+                                                <span class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-regular fa-star"></i>
+                                                </span>
                                             </span>
-                                        </span>
-                                    </p>
-                                    <span><i class="fa-regular fa-heart"></i></span>
+                                        </p>
+                                        <span><i class="fa-regular fa-heart"></i></span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -437,6 +632,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Learn Angular <br> fundamentals</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -466,6 +665,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Build an iOS <br> application in Swift</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -495,6 +698,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Build a Wordpress <br> Website</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -524,6 +731,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Become a React <br> Native Developer</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -570,6 +781,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Learn Sketch</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -599,6 +814,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Learn Sketch</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -628,6 +847,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Learn Photoshop</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -657,6 +880,10 @@
                                 <div class="card-info">
                                     <div class="info-header">
                                         <h5>Learn Figma</h5>
+                                        <div class="tooltip tooltip-heart-bottom">
+                                            <span class="tooltip-text">Add Favourite</span>
+                                        </div>
+                                        <div class="tooltip-heart-down-arr"></div>
                                         <span><i class="fa-regular fa-heart"></i></span>
                                     </div>
                                     <div class="info-hidden">
@@ -830,7 +1057,9 @@
         </nav>
     </aside>
     <!--  -->
-    <div class="overlay"></div>
+    <div class="loading-overloading display">
+        <div class="multiSpin"></div>
+    </div>
 </body>
 
 </html>

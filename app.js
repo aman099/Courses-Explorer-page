@@ -54,14 +54,73 @@ document.addEventListener("DOMContentLoaded", function () {
 
 	// Cards
 	const tdcCards = document.querySelectorAll(".tdc-card");
+	const tdcCardsWrappers = document.querySelectorAll(".tdc-card-wrapper");
 
 	tdcCards.forEach((tdcCard) => {
 		tdcCard.addEventListener("click", (e) => {
-			if (tdcCard.classList.contains("active")) tdcCard.classList.remove("active");
-			else {
+			if (tdcCard.classList.contains("active")) {
+				tdcCard.classList.remove("active");
+				tdcCard.parentElement.classList.remove("active");
+			} else {
 				document.querySelector(".tdc-card.active")?.classList.remove("active");
+				document
+					.querySelector(".tdc-card-wrapper.active")
+					?.classList.remove("active");
 				tdcCard.classList.add("active");
+				tdcCard.parentElement.classList.add("active");
 			}
+		});
+	});
+
+	// Card Tooltip
+	const cardHearts = document.querySelectorAll(
+		".tdc-card-wrapper .tdc-card .tdc-img-info span .fa-heart"
+	);
+	const cardTooltips = document.querySelectorAll(
+		".tdc-card-wrapper .tooltip.tooltip-bottom span.tooltip-text"
+	);
+	const cardTooltipsDownArr = document.querySelectorAll(
+		".tdc-card-wrapper .tooltip-down-arr"
+	);
+
+	cardHearts.forEach((cardHeart) => {
+		cardHeart.addEventListener("mouseover", () => {
+			if (
+				!cardHeart.parentElement.parentElement.parentElement.parentElement.classList.contains(
+					"active"
+				)
+			)
+				cardHeart.parentElement.parentElement.parentElement.parentElement.classList.add(
+					"activate"
+				);
+		});
+		cardHeart.addEventListener("mouseleave", () => {
+			cardHeart.parentElement.parentElement.parentElement.parentElement.classList.remove(
+				"activate"
+			);
+		});
+	});
+
+	const cardHearts2 = document.querySelectorAll(
+		".card-info .info-header .fa-heart"
+	);
+	const cardTooltips2 = document.querySelectorAll(
+		".card-info .info-header .tooltip-heart-bottom .tooltip-text"
+	);
+	const cardTooltipsDownArr2 = document.querySelectorAll(
+		".card-info .info-header .tooltip-heart-down-arr"
+	);
+
+	cardHearts2.forEach((cardHeart) => {
+		cardHeart.addEventListener("mouseover", () => {
+			cardHeart.parentElement.parentElement.parentElement.classList.add(
+				"activate"
+			);
+		});
+		cardHeart.addEventListener("mouseleave", () => {
+			cardHeart.parentElement.parentElement.parentElement.classList.remove(
+				"activate"
+			);
 		});
 	});
 
@@ -80,4 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		overlay.classList.remove("active");
 	});
 	console.log(filterSidebar);
+
+	// Loading page
+	const loadingComp = document.querySelector(".loading-overloading");
+
+	setTimeout(() => {
+		loadingComp.classList.remove("display");
+	}, 3000);
 });

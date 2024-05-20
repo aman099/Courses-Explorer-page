@@ -142,21 +142,36 @@ const docPageTemplate = {
 									],
 								},
 								{
-									tag: "li",
+									tag: "div",
+									attributes: {
+										class: "tooltip tooltip-bottom",
+									},
 									children: [
 										{
-											tag: "a",
-											attributes: {
-												href: "#",
-											},
+											tag: "li",
 											children: [
 												{
-													tag: "i",
+													tag: "a",
 													attributes: {
-														class: "fa-solid fa-users",
+														href: "#",
 													},
+													children: [
+														{
+															tag: "i",
+															attributes: {
+																class: "fa-solid fa-users",
+															},
+														},
+													],
 												},
 											],
+										},
+										{
+											tag: "span",
+											attributes: {
+												class: "tooltip-text",
+											},
+											content: "Community",
 										},
 									],
 								},
@@ -234,24 +249,39 @@ const docPageTemplate = {
 							],
 						},
 						{
-							tag: "li",
+							tag: "div",
 							attributes: {
-								class: "lock",
+								class: "tooltip tooltip-bottom",
 							},
 							children: [
 								{
-									tag: "a",
+									tag: "li",
 									attributes: {
-										href: "#",
+										class: "lock",
 									},
 									children: [
 										{
-											tag: "i",
+											tag: "a",
 											attributes: {
-												class: "fa-solid fa-lock",
+												href: "#",
 											},
+											children: [
+												{
+													tag: "i",
+													attributes: {
+														class: "fa-solid fa-lock",
+													},
+												},
+											],
 										},
 									],
+								},
+								{
+									tag: "span",
+									attributes: {
+										class: "tooltip-text",
+									},
+									content: "Login",
 								},
 							],
 						},
@@ -1142,7 +1172,7 @@ const docPageTemplate = {
 												{
 													tag: "li",
 													attributes: {
-														class: "drop-instigater",
+														class: "drop-instigater abs-menu abs-menu-2",
 													},
 													children: [
 														{
@@ -1622,41 +1652,230 @@ const docPageTemplate = {
 														{
 															tag: "div",
 															attributes: {
-																class: "tdc-card tdc-card-1",
+																class: "tdc-card-wrapper tdc-card-1-wrapper",
 															},
 															children: [
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-cont",
+																		class: "tooltip-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip tooltip-bottom",
 																	},
 																	children: [
 																		{
-																			tag: "img",
+																			tag: "span",
 																			attributes: {
-																				src: "./assets/card-1.png",
+																				class: "tooltip-text",
 																			},
+																			content: "Remove Favourite",
 																		},
+																	],
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip-down-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tdc-card-tt-cont tdc-card-1-tt-cont",
+																	},
+																	children: [
 																		{
 																			tag: "div",
 																			attributes: {
-																				class: "preview-abs",
+																				class: "tooltip-title",
 																			},
 																			children: [
 																				{
 																					tag: "span",
 																					children: [
 																						{
-																							tag: "i",
+																							tag: "img",
 																							attributes: {
-																								class: "fa-regular fa-circle-play",
+																								src: "./assets/card-1.png",
+																								alt: "",
 																							},
 																						},
 																					],
 																				},
 																				{
+																					tag: "div",
+																					attributes: {
+																						class: "title-infos",
+																					},
+																					children: [
+																						{
+																							tag: "h5",
+																							content: "Newsletter Design",
+																						},
+																						{
+																							tag: "p",
+																							content: "with Elijah Murray",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-brief",
+																			},
+																			children: [
+																				{
 																					tag: "p",
-																					content: "Preview",
+																					content:
+																						"Learn the fundamentals of working with Angular and how to create basic applications.",
+																				},
+																			],
+																		},
+																		{
+																			tag: "ul",
+																			attributes: {
+																				class: "tooltip-bullets",
+																			},
+																			children: [
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Fundamentals of working with Angular",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Create complete Angular applications",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>   Understanding Dependancy Injection",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>  Working with the Angular CLI",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Testing with Angular",
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-endings",
+																			},
+																			children: [
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-left",
+																					},
+																					children: [
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-clock",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 6 hours\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-circle-play",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 12 lessons\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-solid fa-chart-column",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" Beginner\n                                            ",
+																								},
+																							],
+																						},
+																					],
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-right",
+																					},
+																					children: [
+																						{
+																							tag: "button",
+																							attributes: {
+																								class: "primary-btn",
+																							},
+																							content: "WATCH TRAILER",
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1665,22 +1884,67 @@ const docPageTemplate = {
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-info",
+																		class: "tdc-card tdc-card-1",
 																	},
 																	children: [
 																		{
-																			tag: "p",
-																			content:
-																				"Newsletter Design <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
-																		},
-																		{
-																			tag: "span",
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-cont",
+																			},
 																			children: [
 																				{
-																					tag: "i",
+																					tag: "img",
 																					attributes: {
-																						class: "fa-regular fa-heart",
+																						src: "./assets/card-1.png",
 																					},
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "preview-abs",
+																					},
+																					children: [
+																						{
+																							tag: "span",
+																							children: [
+																								{
+																									tag: "i",
+																									attributes: {
+																										class: "fa-regular fa-circle-play",
+																									},
+																								},
+																							],
+																						},
+																						{
+																							tag: "p",
+																							content: "Preview",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-info",
+																			},
+																			children: [
+																				{
+																					tag: "p",
+																					content:
+																						"Newsletter Design <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
+																				},
+																				{
+																					tag: "span",
+																					children: [
+																						{
+																							tag: "i",
+																							attributes: {
+																								class: "fa-solid fa-heart",
+																							},
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1691,41 +1955,230 @@ const docPageTemplate = {
 														{
 															tag: "div",
 															attributes: {
-																class: "tdc-card tdc-card-2",
+																class: "tdc-card-wrapper tdc-card-2-wrapper",
 															},
 															children: [
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-cont",
+																		class: "tooltip-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip tooltip-bottom",
 																	},
 																	children: [
 																		{
-																			tag: "img",
+																			tag: "span",
 																			attributes: {
-																				src: "./assets/card-2.png",
+																				class: "tooltip-text",
 																			},
+																			content: "Add Favourite",
 																		},
+																	],
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip-down-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tdc-card-tt-cont tdc-card-2-tt-cont",
+																	},
+																	children: [
 																		{
 																			tag: "div",
 																			attributes: {
-																				class: "preview-abs",
+																				class: "tooltip-title",
 																			},
 																			children: [
 																				{
 																					tag: "span",
 																					children: [
 																						{
-																							tag: "i",
+																							tag: "img",
 																							attributes: {
-																								class: "fa-regular fa-circle-play",
+																								src: "./assets/card-2.png",
+																								alt: "",
 																							},
 																						},
 																					],
 																				},
 																				{
+																					tag: "div",
+																					attributes: {
+																						class: "title-infos",
+																					},
+																					children: [
+																						{
+																							tag: "h5",
+																							content: "Newsletter Design",
+																						},
+																						{
+																							tag: "p",
+																							content: "with Elijah Murray",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-brief",
+																			},
+																			children: [
+																				{
 																					tag: "p",
-																					content: "Preview",
+																					content:
+																						"Learn the fundamentals of working with Angular and how to create basic applications.",
+																				},
+																			],
+																		},
+																		{
+																			tag: "ul",
+																			attributes: {
+																				class: "tooltip-bullets",
+																			},
+																			children: [
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Fundamentals of working with Angular",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Create complete Angular applications",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>   Understanding Dependancy Injection",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>  Working with the Angular CLI",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Testing with Angular",
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-endings",
+																			},
+																			children: [
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-left",
+																					},
+																					children: [
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-clock",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 6 hours\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-circle-play",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 12 lessons\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-solid fa-chart-column",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" Beginner\n                                            ",
+																								},
+																							],
+																						},
+																					],
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-right",
+																					},
+																					children: [
+																						{
+																							tag: "button",
+																							attributes: {
+																								class: "primary-btn",
+																							},
+																							content: "WATCH TRAILER",
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1734,22 +2187,67 @@ const docPageTemplate = {
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-info",
+																		class: "tdc-card tdc-card-2",
 																	},
 																	children: [
 																		{
-																			tag: "p",
-																			content:
-																				"Adobe XD <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
-																		},
-																		{
-																			tag: "span",
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-cont",
+																			},
 																			children: [
 																				{
-																					tag: "i",
+																					tag: "img",
 																					attributes: {
-																						class: "fa-regular fa-heart",
+																						src: "./assets/card-2.png",
 																					},
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "preview-abs",
+																					},
+																					children: [
+																						{
+																							tag: "span",
+																							children: [
+																								{
+																									tag: "i",
+																									attributes: {
+																										class: "fa-regular fa-circle-play",
+																									},
+																								},
+																							],
+																						},
+																						{
+																							tag: "p",
+																							content: "Preview",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-info",
+																			},
+																			children: [
+																				{
+																					tag: "p",
+																					content:
+																						"Adobe XD <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
+																				},
+																				{
+																					tag: "span",
+																					children: [
+																						{
+																							tag: "i",
+																							attributes: {
+																								class: "fa-regular fa-heart",
+																							},
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1760,41 +2258,230 @@ const docPageTemplate = {
 														{
 															tag: "div",
 															attributes: {
-																class: "tdc-card tdc-card-3",
+																class: "tdc-card-wrapper tdc-card-3-wrapper",
 															},
 															children: [
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-cont",
+																		class: "tooltip-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip tooltip-bottom",
 																	},
 																	children: [
 																		{
-																			tag: "img",
+																			tag: "span",
 																			attributes: {
-																				src: "./assets/card-3.png",
+																				class: "tooltip-text",
 																			},
+																			content: "Add Favourite",
 																		},
+																	],
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip-down-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tdc-card-tt-cont tdc-card-3-tt-cont",
+																	},
+																	children: [
 																		{
 																			tag: "div",
 																			attributes: {
-																				class: "preview-abs",
+																				class: "tooltip-title",
 																			},
 																			children: [
 																				{
 																					tag: "span",
 																					children: [
 																						{
-																							tag: "i",
+																							tag: "img",
 																							attributes: {
-																								class: "fa-regular fa-circle-play",
+																								src: "./assets/card-3.png",
+																								alt: "",
 																							},
 																						},
 																					],
 																				},
 																				{
+																					tag: "div",
+																					attributes: {
+																						class: "title-infos",
+																					},
+																					children: [
+																						{
+																							tag: "h5",
+																							content: "inVision App",
+																						},
+																						{
+																							tag: "p",
+																							content: "with Elijah Murray",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-brief",
+																			},
+																			children: [
+																				{
 																					tag: "p",
-																					content: "Preview",
+																					content:
+																						"Learn the fundamentals of working with Angular and how to create basic applications.",
+																				},
+																			],
+																		},
+																		{
+																			tag: "ul",
+																			attributes: {
+																				class: "tooltip-bullets",
+																			},
+																			children: [
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Fundamentals of working with Angular",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Create complete Angular applications",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>   Understanding Dependancy Injection",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>  Working with the Angular CLI",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Testing with Angular",
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-endings",
+																			},
+																			children: [
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-left",
+																					},
+																					children: [
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-clock",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 6 hours\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-circle-play",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 12 lessons\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-solid fa-chart-column",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" Beginner\n                                            ",
+																								},
+																							],
+																						},
+																					],
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-right",
+																					},
+																					children: [
+																						{
+																							tag: "button",
+																							attributes: {
+																								class: "primary-btn",
+																							},
+																							content: "WATCH TRAILER",
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1803,22 +2490,67 @@ const docPageTemplate = {
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-info",
+																		class: "tdc-card tdc-card-3",
 																	},
 																	children: [
 																		{
-																			tag: "p",
-																			content:
-																				"inVision App <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
-																		},
-																		{
-																			tag: "span",
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-cont",
+																			},
 																			children: [
 																				{
-																					tag: "i",
+																					tag: "img",
 																					attributes: {
-																						class: "fa-regular fa-heart",
+																						src: "./assets/card-3.png",
 																					},
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "preview-abs",
+																					},
+																					children: [
+																						{
+																							tag: "span",
+																							children: [
+																								{
+																									tag: "i",
+																									attributes: {
+																										class: "fa-regular fa-circle-play",
+																									},
+																								},
+																							],
+																						},
+																						{
+																							tag: "p",
+																							content: "Preview",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-info",
+																			},
+																			children: [
+																				{
+																					tag: "p",
+																					content:
+																						"inVision App <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
+																				},
+																				{
+																					tag: "span",
+																					children: [
+																						{
+																							tag: "i",
+																							attributes: {
+																								class: "fa-regular fa-heart",
+																							},
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1829,41 +2561,230 @@ const docPageTemplate = {
 														{
 															tag: "div",
 															attributes: {
-																class: "tdc-card tdc-card-4",
+																class: "tdc-card-wrapper tdc-card-4-wrapper",
 															},
 															children: [
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-cont",
+																		class: "tooltip-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip tooltip-bottom",
 																	},
 																	children: [
 																		{
-																			tag: "img",
+																			tag: "span",
 																			attributes: {
-																				src: "./assets/card-4.png",
+																				class: "tooltip-text",
 																			},
+																			content: "Add Favourite",
 																		},
+																	],
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tooltip-down-arr",
+																	},
+																},
+																{
+																	tag: "div",
+																	attributes: {
+																		class: "tdc-card-tt-cont tdc-card-4-tt-cont",
+																	},
+																	children: [
 																		{
 																			tag: "div",
 																			attributes: {
-																				class: "preview-abs",
+																				class: "tooltip-title",
 																			},
 																			children: [
 																				{
 																					tag: "span",
 																					children: [
 																						{
-																							tag: "i",
+																							tag: "img",
 																							attributes: {
-																								class: "fa-regular fa-circle-play",
+																								src: "./assets/card-4.png",
+																								alt: "",
 																							},
 																						},
 																					],
 																				},
 																				{
+																					tag: "div",
+																					attributes: {
+																						class: "title-infos",
+																					},
+																					children: [
+																						{
+																							tag: "h5",
+																							content: "Craft by inVision",
+																						},
+																						{
+																							tag: "p",
+																							content: "with Elijah Murray",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-brief",
+																			},
+																			children: [
+																				{
 																					tag: "p",
-																					content: "Preview",
+																					content:
+																						"Learn the fundamentals of working with Angular and how to create basic applications.",
+																				},
+																			],
+																		},
+																		{
+																			tag: "ul",
+																			attributes: {
+																				class: "tooltip-bullets",
+																			},
+																			children: [
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Fundamentals of working with Angular",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Create complete Angular applications",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>   Understanding Dependancy Injection",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span>  Working with the Angular CLI",
+																				},
+																				{
+																					tag: "li",
+																					content:
+																						"<span><i class='fa-solid fa-check'></i></span> Testing with Angular",
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tooltip-endings",
+																			},
+																			children: [
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-left",
+																					},
+																					children: [
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-clock",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 6 hours\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-regular fa-circle-play",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" 12 lessons\n                                            ",
+																								},
+																							],
+																						},
+																						{
+																							tag: "div",
+																							attributes: {
+																								class: "endings-left-1",
+																							},
+																							content:
+																								"\n                                                ",
+																							children: [
+																								{
+																									tag: "span",
+																									children: [
+																										{
+																											tag: "i",
+																											attributes: {
+																												class: "fa-solid fa-chart-column",
+																											},
+																										},
+																									],
+																								},
+																								{
+																									tag: "span",
+																									content:
+																										" Beginner\n                                            ",
+																								},
+																							],
+																						},
+																					],
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "endings-right",
+																					},
+																					children: [
+																						{
+																							tag: "button",
+																							attributes: {
+																								class: "primary-btn",
+																							},
+																							content: "WATCH TRAILER",
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1872,22 +2793,67 @@ const docPageTemplate = {
 																{
 																	tag: "div",
 																	attributes: {
-																		class: "tdc-img-info",
+																		class: "tdc-card tdc-card-4",
 																	},
 																	children: [
 																		{
-																			tag: "p",
-																			content:
-																				"Craft by inVision <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
-																		},
-																		{
-																			tag: "span",
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-cont",
+																			},
 																			children: [
 																				{
-																					tag: "i",
+																					tag: "img",
 																					attributes: {
-																						class: "fa-regular fa-heart",
+																						src: "./assets/card-4.png",
 																					},
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "preview-abs",
+																					},
+																					children: [
+																						{
+																							tag: "span",
+																							children: [
+																								{
+																									tag: "i",
+																									attributes: {
+																										class: "fa-regular fa-circle-play",
+																									},
+																								},
+																							],
+																						},
+																						{
+																							tag: "p",
+																							content: "Preview",
+																						},
+																					],
+																				},
+																			],
+																		},
+																		{
+																			tag: "div",
+																			attributes: {
+																				class: "tdc-img-info",
+																			},
+																			children: [
+																				{
+																					tag: "p",
+																					content:
+																						"Craft by inVision <span><span class='tdc-teacher'>Elijah Murray</span><span class='stars'><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-solid fa-star'></i><i class='fa-regular fa-star'></i></span></span>",
+																				},
+																				{
+																					tag: "span",
+																					children: [
+																						{
+																							tag: "i",
+																							attributes: {
+																								class: "fa-regular fa-heart",
+																							},
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -1971,8 +2937,39 @@ const docPageTemplate = {
 																			children: [
 																				{
 																					tag: "h5",
-																					content:
-																						"Learn Angular <br> fundamentals</h5><span><i class='fa-regular fa-heart'></i></span>",
+																					content: "Learn Angular <br> fundamentals",
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "tooltip tooltip-heart-bottom",
+																					},
+																					children: [
+																						{
+																							tag: "span",
+																							attributes: {
+																								class: "tooltip-text",
+																							},
+																							content: "Add Favourite",
+																						},
+																					],
+																				},
+																				{
+																					tag: "div",
+																					attributes: {
+																						class: "tooltip-heart-down-arr",
+																					},
+																				},
+																				{
+																					tag: "span",
+																					children: [
+																						{
+																							tag: "i",
+																							attributes: {
+																								class: "fa-regular fa-heart",
+																							},
+																						},
+																					],
 																				},
 																			],
 																		},
@@ -2009,13 +3006,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours </div> <div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span> &nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2037,7 +3029,7 @@ const docPageTemplate = {
 																			tag: "img",
 																			attributes: {
 																				src: "./assets/wordpress.png",
-																				alt: "Angular Logo",
+																				alt: "Wordpress Logo",
 																			},
 																		},
 																	],
@@ -2054,7 +3046,7 @@ const docPageTemplate = {
 																				class: "info-header",
 																			},
 																			content:
-																				"<h5>Build an iOS <br> application in Swift</h5><span><i class='fa-regular fa-heart'></i></span>",
+																				"<h5>Build an iOS <br> application in Swift</h5> <div class='tooltip tooltip-heart-bottom'> <span class='tooltip-text'>Add Favourite</span> </div> <div class='tooltip-heart-down-arr'></div> <span><i class='fa-regular fa-heart'></i></span>",
 																		},
 																		{
 																			tag: "div",
@@ -2089,13 +3081,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2134,7 +3121,7 @@ const docPageTemplate = {
 																				class: "info-header",
 																			},
 																			content:
-																				"<h5>Build a Wordpress <br> Website</h5><span><i class='fa-regular fa-heart'></i></span>",
+																				"<h5>Build a Wordpress <br> Website</h5> <div class='tooltip tooltip-heart-bottom'> <span class='tooltip-text'>Add Favourite</span> </div> <div class='tooltip-heart-down-arr'></div> <span><i class='fa-regular fa-heart'></i></span>",
 																		},
 																		{
 																			tag: "div",
@@ -2169,13 +3156,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2214,7 +3196,7 @@ const docPageTemplate = {
 																				class: "info-header",
 																			},
 																			content:
-																				"<h5>Become a React <br> Native Developer</h5> <span><i class='fa-regular fa-heart'></i></span>",
+																				"<h5>Become a React <br> Native Developer</h5> <div class='tooltip tooltip-heart-bottom'> <span class='tooltip-text'>Add Favourite</span> </div> <div class='tooltip-heart-down-arr'></div> <span><i class='fa-regular fa-heart'></i></span>",
 																		},
 																		{
 																			tag: "div",
@@ -2249,13 +3231,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2335,7 +3312,7 @@ const docPageTemplate = {
 																				class: "info-header",
 																			},
 																			content:
-																				"<h5>Learn Sketch</h5><span><i class='fa-regular fa-heart'></i></span>",
+																				"<h5>Learn Sketch</h5> <div class='tooltip tooltip-heart-bottom'> <span class='tooltip-text'>Add Favourite</span> </div> <div class='tooltip-heart-down-arr'></div> <span><i class='fa-regular fa-heart'></i></span>",
 																		},
 																		{
 																			tag: "div",
@@ -2370,13 +3347,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2415,7 +3387,7 @@ const docPageTemplate = {
 																				class: "info-header",
 																			},
 																			content:
-																				"<h5>Learn Sketch</h5><span><i class='fa-regular fa-heart'></i></span>",
+																				"<h5>Learn Sketch</h5> <div class='tooltip tooltip-heart-bottom'> <span class='tooltip-text'>Add Favourite</span> </div> <div class='tooltip-heart-down-arr'></div> <span><i class='fa-regular fa-heart'></i></span>",
 																		},
 																		{
 																			tag: "div",
@@ -2450,13 +3422,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2495,7 +3462,7 @@ const docPageTemplate = {
 																				class: "info-header",
 																			},
 																			content:
-																				"<h5>Learn Photoshop</h5><span><i class='fa-regular fa-heart'></i></span>",
+																				"<h5>Learn Photoshop</h5> <div class='tooltip tooltip-heart-bottom'> <span class='tooltip-text'>Add Favourite</span> </div> <div class='tooltip-heart-down-arr'></div> <span><i class='fa-regular fa-heart'></i></span>",
 																		},
 																		{
 																			tag: "div",
@@ -2530,13 +3497,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2575,7 +3537,7 @@ const docPageTemplate = {
 																				class: "info-header",
 																			},
 																			content:
-																				"<h5>Learn Figma</h5><span><i class='fa-regular fa-heart'></i></span>",
+																				"<h5>Learn Figma</h5> <div class='tooltip tooltip-heart-bottom'> <span class='tooltip-text'>Add Favourite</span> </div> <div class='tooltip-heart-down-arr'></div> <span><i class='fa-regular fa-heart'></i></span>",
 																		},
 																		{
 																			tag: "div",
@@ -2610,13 +3572,8 @@ const docPageTemplate = {
 																			attributes: {
 																				class: "info-content",
 																			},
-																			children: [
-																				{
-																					tag: "div",
-																					content:
-																						"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
-																				},
-																			],
+																			content:
+																				"<div class='time'><span><i class='fa-regular fa-clock'></i></span>&nbsp; 6 hours</div><div class='lessons'><span><i class='fa-regular fa-circle-play'></i></span>&nbsp; 12 lessons</div>",
 																		},
 																	],
 																},
@@ -2960,6 +3917,20 @@ const docPageTemplate = {
 							],
 						},
 					],
+				},
+			],
+		},
+		{
+			tag: "div",
+			attributes: {
+				class: "loading-overloading display",
+			},
+			children: [
+				{
+					tag: "div",
+					attributes: {
+						class: "multiSpin",
+					},
 				},
 			],
 		},
